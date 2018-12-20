@@ -7,10 +7,10 @@
 //
 
 import UIKit
-import SysFaceDetector
+import SmilePassFaceDetector
 import ActionSheetPicker_3_0
 
-class ViewController: UIViewController, CameraViewControllerDelegate {
+class ViewController: UIViewController, SmilePassFaceDetectorDelegates {
     var cameraFacing: CameraFacing?
     var livenessAction: LivenessAction?
     var strictnessMode: StrictnessMode?
@@ -44,7 +44,7 @@ class ViewController: UIViewController, CameraViewControllerDelegate {
         }, cancel: { ActionStringCancelBlock in return }, origin: sender)
     }
     @IBAction func livenessActionTapped(_ sender: Any) {
-        ActionSheetStringPicker.show(withTitle: "Select Liveness Action", rows: ["None", "Smile Only", "Blink Only", "Smile Then Blink", "Blink Then Smile"], initialSelection: 0, doneBlock: {
+        ActionSheetStringPicker.show(withTitle: "Select Liveness Action", rows: ["None", "Smile", "Blink"], initialSelection: 0, doneBlock: {
             picker, value, index in
             self.livenessAction = LivenessAction(rawValue: value)!
             self.livenessActionButton.setTitle(index as? String, for: .normal)
@@ -67,8 +67,20 @@ class ViewController: UIViewController, CameraViewControllerDelegate {
         } else if strictnessMode == nil {
             showAlert(message: "Please select strictness mode.")
         } else {
-            let cam = SysFaceDetector(accessKey: "e4f0cadc2537ff789e188b8e5813dbc3f7f12b0f37f657df3cd42eb656a1f694cb648db83bafc380abb8712236ec07f19704e56b9c077ac78217557f5eca1546", withCameraDelegate: self)
-            cam.presentViewController(onViewController: self, livenessAction: livenessAction!, strictnessMode: strictnessMode!, cameraFacing: cameraFacing!, showInstructions: true, cameraPreset: .photo)
+            let cam = SmilePassFaceDetector(accessKey: "YOUR_API_KEY", withCameraDelegate: self)
+            let faceDetectorConfig = SmilePassFaceDetectorConfig()
+            faceDetectorConfig.strictnessMode = .lenient
+            faceDetectorConfig.cameraFacing = .front
+            faceDetectorConfig.showInstructions = true
+            faceDetectorConfig.randomizationOption = .dontRandomize
+            faceDetectorConfig.livenessAction = [self.livenessAction!]
+            DispatchQueue.main.async {
+                cam.presentViewController(onViewController: self, SmilePassFaceDetectorConfig: faceDetectorConfig, completion: { (error) in
+                    if (error != nil) {
+                        print(error)
+                    }
+                })
+            }
         }
     }
     

@@ -1,0 +1,11 @@
+framework module SmilePassFaceDetector {
+  umbrella header "SmilePassFaceDetector.h"
+
+  export *
+  module * { export * }
+}
+
+module SmilePassFaceDetector.Swift {
+    header "SmilePassFaceDetector-Swift.h"
+    requires objc
+}

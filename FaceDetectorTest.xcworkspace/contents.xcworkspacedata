@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:FaceDetectorTest.xcodeproj">
+      location = "group:/Users/stplmacmini14/Workspace/SmilePass/SmilePass_Face_Sample/SmilePass-FaceSDK-iOS/FaceDetectorTest.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
