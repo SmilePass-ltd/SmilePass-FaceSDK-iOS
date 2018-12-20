@@ -1,0 +1,11 @@
+framework module SysFaceDetector {
+  umbrella header "SysFaceDetector.h"
+
+  export *
+  module * { export * }
+}
+
+module SysFaceDetector.Swift {
+    header "SysFaceDetector-Swift.h"
+    requires objc
+}
