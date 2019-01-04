@@ -73,10 +73,10 @@ class ViewController: UIViewController, SmilePassFaceDetectorDelegates {
             faceDetectorConfig.cameraFacing = .front
             faceDetectorConfig.showInstructions = true
             if self.livenessActionButton.currentTitle == "None" {
+                faceDetectorConfig.randomizationOption = .none
+            } else {
                 faceDetectorConfig.randomizationOption = .dontRandomize
                 faceDetectorConfig.livenessAction = [self.livenessAction!]
-            } else {
-                faceDetectorConfig.randomizationOption = .none
             }
             faceDetectorConfig.baseURL = ""
             DispatchQueue.main.async {
