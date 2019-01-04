@@ -39,7 +39,7 @@ here the initializers method will take `accessKey` as parameter to validate API 
 
 After creating the object of `SmilePassFaceDetector` you need to present the Camera to automatically capture selfie like this 
 
-    cam.presentViewController(onViewController: self, smilePassFaceDetectorConfig: faceDetectorConfig, completion: { (error) in
+    faceDetector.presentViewController(onViewController: self, smilePassFaceDetectorConfig: faceDetectorConfig, completion: { (error) in
             if error != nil {
                print(error)
             }
