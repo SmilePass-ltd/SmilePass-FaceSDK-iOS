@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		062B362D344BCD53A855A31B /* Pods_FaceDetectorTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B999A03FE31CCD9C5B2FC010 /* Pods_FaceDetectorTestTests.framework */; };
-		0CA3EAEF21CB9FDD00780647 /* SmilePassFaceDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA3EAEE21CB9FDD00780647 /* SmilePassFaceDetector.framework */; };
-		0CA3EAF021CBA16E00780647 /* SmilePassFaceDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA3EAEE21CB9FDD00780647 /* SmilePassFaceDetector.framework */; };
-		0CA3EAF121CBA16E00780647 /* SmilePassFaceDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0CA3EAEE21CB9FDD00780647 /* SmilePassFaceDetector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0C3DE02921DF645A0091EE6D /* SmilePassFaceDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3DE02821DF645A0091EE6D /* SmilePassFaceDetector.framework */; };
+		0C3DE02A21DF645C0091EE6D /* SmilePassFaceDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3DE02821DF645A0091EE6D /* SmilePassFaceDetector.framework */; };
+		0C3DE02B21DF645C0091EE6D /* SmilePassFaceDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C3DE02821DF645A0091EE6D /* SmilePassFaceDetector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0CDCD64120BE8B1C0037414B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD64020BE8B1C0037414B /* AppDelegate.swift */; };
 		0CDCD64320BE8B1C0037414B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD64220BE8B1C0037414B /* ViewController.swift */; };
 		0CDCD64920BE8B1C0037414B /* FaceDetectorTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD64720BE8B1C0037414B /* FaceDetectorTest.xcdatamodeld */; };
@@ -50,7 +50,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0CA3EAF121CBA16E00780647 /* SmilePassFaceDetector.framework in Embed Frameworks */,
+				0C3DE02B21DF645C0091EE6D /* SmilePassFaceDetector.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0CA3EAEE21CB9FDD00780647 /* SmilePassFaceDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmilePassFaceDetector.framework; sourceTree = "<group>"; };
+		0C3DE02821DF645A0091EE6D /* SmilePassFaceDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmilePassFaceDetector.framework; sourceTree = "<group>"; };
 		0CDCD63D20BE8B1C0037414B /* FaceDetectorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetectorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDCD64020BE8B1C0037414B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CDCD64220BE8B1C0037414B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,9 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CA3EAF021CBA16E00780647 /* SmilePassFaceDetector.framework in Frameworks */,
+				0C3DE02A21DF645C0091EE6D /* SmilePassFaceDetector.framework in Frameworks */,
 				0CDCD70D20BEE02D0037414B /* UIKit.framework in Frameworks */,
-				0CA3EAEF21CB9FDD00780647 /* SmilePassFaceDetector.framework in Frameworks */,
+				0C3DE02921DF645A0091EE6D /* SmilePassFaceDetector.framework in Frameworks */,
 				0CDCD70B20BEE0230037414B /* Foundation.framework in Frameworks */,
 				A1166626EAF47006B38D4306 /* Pods_FaceDetectorTest.framework in Frameworks */,
 			);
@@ -147,7 +147,7 @@
 				0CDCD64020BE8B1C0037414B /* AppDelegate.swift */,
 				0CDCD64220BE8B1C0037414B /* ViewController.swift */,
 				0CDCD7A620BFE2CB0037414B /* ImageViewController.swift */,
-				0CA3EAEE21CB9FDD00780647 /* SmilePassFaceDetector.framework */,
+				0C3DE02821DF645A0091EE6D /* SmilePassFaceDetector.framework */,
 				0CDCD64A20BE8B1C0037414B /* Assets.xcassets */,
 				0CDCD67320BE8C9C0037414B /* Main.storyboard */,
 				0CDCD64C20BE8B1C0037414B /* LaunchScreen.storyboard */,
@@ -273,7 +273,7 @@
 				TargetAttributes = {
 					0CDCD63C20BE8B1C0037414B = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					0CDCD65320BE8B1C0037414B = {
 						CreatedOnToolsVersion = 9.2;
@@ -576,9 +576,10 @@
 			baseConfigurationReference = 87276D57FA1E7B7E9C66DBAF /* Pods-FaceDetectorTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2W8FH84P94;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA7X9GCQW8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -596,8 +597,8 @@
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.systango.facesdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "83bec08f-b946-4b67-8056-7c2fee6e1888";
-				PROVISIONING_PROFILE_SPECIFIER = FaceSDK_Dev_18June;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -608,9 +609,10 @@
 			baseConfigurationReference = F13FF44793C3C58DD9479038 /* Pods-FaceDetectorTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 2W8FH84P94;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = GA7X9GCQW8;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -628,8 +630,8 @@
 				OTHER_LDFLAGS = "-lc++";
 				PRODUCT_BUNDLE_IDENTIFIER = com.systango.facesdk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "83bec08f-b946-4b67-8056-7c2fee6e1888";
-				PROVISIONING_PROFILE_SPECIFIER = FaceSDK_Dev_18June;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

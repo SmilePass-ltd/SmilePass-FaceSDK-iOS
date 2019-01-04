@@ -67,15 +67,20 @@ class ViewController: UIViewController, SmilePassFaceDetectorDelegates {
         } else if strictnessMode == nil {
             showAlert(message: "Please select strictness mode.")
         } else {
-            let cam = SmilePassFaceDetector(accessKey: "YOUR_API_KEY", withCameraDelegate: self)
+            let cam = SmilePassFaceDetector(accessKey: "", withCameraDelegate: self)
             let faceDetectorConfig = SmilePassFaceDetectorConfig()
             faceDetectorConfig.strictnessMode = .lenient
             faceDetectorConfig.cameraFacing = .front
             faceDetectorConfig.showInstructions = true
-            faceDetectorConfig.randomizationOption = .dontRandomize
-            faceDetectorConfig.livenessAction = [self.livenessAction!]
+            if self.livenessActionButton.currentTitle == "None" {
+                faceDetectorConfig.randomizationOption = .dontRandomize
+                faceDetectorConfig.livenessAction = [self.livenessAction!]
+            } else {
+                faceDetectorConfig.randomizationOption = .none
+            }
+            faceDetectorConfig.baseURL = ""
             DispatchQueue.main.async {
-                cam.presentViewController(onViewController: self, SmilePassFaceDetectorConfig: faceDetectorConfig, completion: { (error) in
+                cam.presentViewController(onViewController: self, smilePassFaceDetectorConfig: faceDetectorConfig, completion: { (error) in
                     if (error != nil) {
                         print(error)
                     }
