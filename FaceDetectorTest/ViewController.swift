@@ -67,7 +67,7 @@ class ViewController: UIViewController, SmilePassFaceDetectorDelegates {
         } else if strictnessMode == nil {
             showAlert(message: "Please select strictness mode.")
         } else {
-            let cam = SmilePassFaceDetector(accessKey: "", withCameraDelegate: self)
+            let cam = SmilePassFaceDetector(accessKey: "API_KEY", withCameraDelegate: self)
             let faceDetectorConfig = SmilePassFaceDetectorConfig()
             faceDetectorConfig.strictnessMode = .lenient
             faceDetectorConfig.cameraFacing = .front
