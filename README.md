@@ -6,7 +6,7 @@ SmilePass is a face detection and autoselfie SDK for Android. This repo is the s
 
 **SmilePass Face SDK can be used:**
 
-* To detect whether a person is real or it's a still image or video which is called liveness detection.
+* To detect whether an image capture is a live person or a still image or video; called liveness detection.
 * To detect face of a person.
 * To capture a person's image automatically.
 * To detect different gestures of a person i.e. smile, blink, wink.
@@ -17,7 +17,7 @@ This guide is a quick start to add SmilePass Face SDK to an iOS app.
 
 ## Prerequisites
 ### SmilePass API key
-Your application needs an API key to access the features of SmilePass Face SDK. You can use it with any of your applications that use SmilePass Mobile SDKs and External APIs. It supports an unlimited number of users. To get API KEY, [Contact SmilePass](https://smile-pass.com/contact).
+Your application needs an API key to access the features of SmilePass Face SDK. You can use it with any of your applications that use SmilePass Mobile SDKs and External APIs. It supports an unlimited number of users. To get an API key, [Contact SmilePass](https://smile-pass.com/contact).
 
 ## Add Face SDK to your app
 ### Step 1. Add SmilePass dependency
