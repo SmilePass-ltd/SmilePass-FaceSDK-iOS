@@ -7,7 +7,8 @@ target 'FaceDetectorTest' do
 
   # Pods for FaceDetectorTest
 	pod 'ActionSheetPicker-3.0'
-
+    pod 'GoogleMobileVision'
+    
   target 'FaceDetectorTestTests' do
     inherit! :search_paths
     # Pods for testing
