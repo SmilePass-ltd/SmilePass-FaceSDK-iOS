@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		062B362D344BCD53A855A31B /* Pods_FaceDetectorTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B999A03FE31CCD9C5B2FC010 /* Pods_FaceDetectorTestTests.framework */; };
-		0C2EB07921DF9E680050D6C0 /* SmilePassFaceDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2EB07821DF9E680050D6C0 /* SmilePassFaceDetector.framework */; };
-		0C2EB07A21DF9E6F0050D6C0 /* SmilePassFaceDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2EB07821DF9E680050D6C0 /* SmilePassFaceDetector.framework */; };
-		0C2EB07B21DF9E6F0050D6C0 /* SmilePassFaceDetector.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2EB07821DF9E680050D6C0 /* SmilePassFaceDetector.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		0CC6CB3D222F98F00009277C /* SmilePassFaceDetector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC6CB3C222F98F00009277C /* SmilePassFaceDetector.framework */; };
 		0CDCD64120BE8B1C0037414B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD64020BE8B1C0037414B /* AppDelegate.swift */; };
 		0CDCD64320BE8B1C0037414B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD64220BE8B1C0037414B /* ViewController.swift */; };
 		0CDCD64920BE8B1C0037414B /* FaceDetectorTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0CDCD64720BE8B1C0037414B /* FaceDetectorTest.xcdatamodeld */; };
@@ -50,7 +48,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				0C2EB07B21DF9E6F0050D6C0 /* SmilePassFaceDetector.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,7 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0C2EB07821DF9E680050D6C0 /* SmilePassFaceDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmilePassFaceDetector.framework; sourceTree = "<group>"; };
+		0CC6CB3C222F98F00009277C /* SmilePassFaceDetector.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SmilePassFaceDetector.framework; sourceTree = "<group>"; };
 		0CDCD63D20BE8B1C0037414B /* FaceDetectorTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceDetectorTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CDCD64020BE8B1C0037414B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CDCD64220BE8B1C0037414B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,9 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C2EB07A21DF9E6F0050D6C0 /* SmilePassFaceDetector.framework in Frameworks */,
 				0CDCD70D20BEE02D0037414B /* UIKit.framework in Frameworks */,
-				0C2EB07921DF9E680050D6C0 /* SmilePassFaceDetector.framework in Frameworks */,
+				0CC6CB3D222F98F00009277C /* SmilePassFaceDetector.framework in Frameworks */,
 				0CDCD70B20BEE0230037414B /* Foundation.framework in Frameworks */,
 				A1166626EAF47006B38D4306 /* Pods_FaceDetectorTest.framework in Frameworks */,
 			);
@@ -147,7 +143,7 @@
 				0CDCD64020BE8B1C0037414B /* AppDelegate.swift */,
 				0CDCD64220BE8B1C0037414B /* ViewController.swift */,
 				0CDCD7A620BFE2CB0037414B /* ImageViewController.swift */,
-				0C2EB07821DF9E680050D6C0 /* SmilePassFaceDetector.framework */,
+				0CC6CB3C222F98F00009277C /* SmilePassFaceDetector.framework */,
 				0CDCD64A20BE8B1C0037414B /* Assets.xcassets */,
 				0CDCD67320BE8C9C0037414B /* Main.storyboard */,
 				0CDCD64C20BE8B1C0037414B /* LaunchScreen.storyboard */,
