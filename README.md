@@ -12,6 +12,10 @@ SmilePass is a face detection and autoselfie SDK for Android. This repo is the s
 * To detect different gestures of a person i.e. smile, blink, wink.
 * The minimum iOS version required to use this SDK is iOS 10.0
 
+# Running Sample App
+To run the sample app, install the pods by running 
+`pod install`
+
 # Get Started
 This guide is a quick start to add SmilePass Face SDK to an iOS app.
 
